@@ -9,4 +9,4 @@ var separate_time = function(date){
 
 var now = new Date();
 counter = separate_time(now);
-document.getElementById('countdown').textContent = counter[2] + '時間' + counter[1] + '分' + counter[0] + '秒';
+document.getElementById('countdown').textContent = counter[3] + '日' + ounter[2] + '時間' + counter[1] + '分' + counter[0] + '秒';
