@@ -1,5 +1,4 @@
-var separate_time = function(date){
-  var time = date.getTime();
+var separate_time = function(time){
   var sec   = time.getSeconds();
   var min   = time.getMinutes();
   var hours = time.getHours();
