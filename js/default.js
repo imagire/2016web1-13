@@ -9,6 +9,7 @@ var separate_time = function(time){
 }
 
 var now = new Date();
+var target = new Date(2020,7,24,0,0,0,0);
 var counter = separate_time(now);
 document.getElementById('countdown').textContent = 
   counter[5] + '年' + 
