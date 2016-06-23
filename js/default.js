@@ -13,6 +13,6 @@ var counter = separate_time(diff);
 document.getElementById('countdown').textContent = 
   '東京オリンピックまであと ' +
   counter[3] + '日' + 
-  counter[2] + '時' + 
+  counter[2] + '時間' + 
   counter[1] + '分' + 
   counter[0] + '秒';
