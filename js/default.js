@@ -17,10 +17,10 @@ var update = function(){
     counter[2] + '時間' + 
     counter[1] + '分' + 
     counter[0] + '秒';
-  reflesh();// タイマーを起動
+  refresh();// タイマーを起動
 }
 
-var reflesh= function(){
+var refresh= function(){
   setTimeout(update, 1000);//1000ミリ秒待ってからupdateを実行
 }
 update();// 最初の更新
