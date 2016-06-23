@@ -3,9 +3,17 @@ var separate_time = function(time){
   var min   = time.getMinutes();
   var hours = time.getHours();
   var days  = time.getDate();
-  return [sec, min, hours, days];
+  var month = time.getMonth();
+  var year  = time.getYear();
+  return [sec, min, hours, days, month, year];
 }
 
 var now = new Date();
 var counter = separate_time(now);
-document.getElementById('countdown').textContent = counter[3] + '時' + counter[2] + '時' + counter[1] + '分' + counter[0] + '秒';
+document.getElementById('countdown').textContent = 
+  counter[5] + '年' + 
+  counter[4] + '月' + 
+  counter[3] + '日' + 
+  counter[2] + '時' + 
+  counter[1] + '分' + 
+  counter[0] + '秒';
