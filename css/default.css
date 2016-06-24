@@ -9,16 +9,17 @@ body{
   width: 50%;
 }
 
+ul{
+  list-style:none;// ・を消す
+}
+
 li{
   float: left;
   margin-right: 1%;
 }
 
-.image{
-  list-style:none;
-}
-
 .image:after{
+  // clear-fix
   content: ""; 
   display: block; 
   clear: both;
