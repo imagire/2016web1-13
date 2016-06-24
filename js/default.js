@@ -5,10 +5,10 @@
 
 var filename = getFileName();
 var opt;
-if(filename === 'index.html'){
-  opt = document.querySelector('option[value="index.html"]');
-}else if(filename === 'other.html'){
+if(filename === 'other.html'){
   opt = document.querySelector('option[value="other.html"]');
+}else{
+  opt = document.querySelector('option[value="index.html"]');
 }
 opt.selected = true;
 */
