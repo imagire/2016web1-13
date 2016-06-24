@@ -13,3 +13,7 @@ li{
   float: left;
   margin-right: 1%;
 }
+
+ul:after{
+  float: none;
+}
