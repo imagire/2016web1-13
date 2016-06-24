@@ -42,13 +42,15 @@ if(last_date){
 }else{
     document.getElementById('cookie').textContent = 'はじめまして';
 }
-document.getElementById('remove_cookie').onsubmit = function(){
-    setCookie('lastDate', "", 0);
-};
 
 // 新しい値の保存
 var current_time = new Date();
 setCookie('lastDate', current_time.toString(), 7);
+
+// クッキーの削除
+document.getElementById('remove_cookie').onsubmit = function(){
+    setCookie('lastDate', "", 0);
+};
 
 
 function getFileName() {
