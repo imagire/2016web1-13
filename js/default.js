@@ -1,4 +1,4 @@
-function getFileName() {
+/*function getFileName() {
     // ホスト以下のパスを取得し、それをsplit('/')で「/」区切りで配列に入れ、pop()で配列の最後の値を取得
     return window.location.href.split('/').pop();
 }
@@ -11,7 +11,7 @@ if(filename === 'index.html'){
   opt = document.querySelector('option[value="other.html"]');
 }
 opt.selected = true;
-
+*/
 document.getElementById('form').select.onchange = function(){
   location.href = document.getElementById('form').select.value;
 }
