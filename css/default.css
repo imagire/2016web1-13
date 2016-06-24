@@ -14,7 +14,7 @@ li{
   margin-right: 1%;
 }
 
-ul:after{
+#image:after{
   display: block;
   clear: both;
   height: 0px;
