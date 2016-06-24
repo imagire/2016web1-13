@@ -35,14 +35,14 @@ function getCookie(c_name){
     return "";
 }
 
-var last_date = setCookie('lastDate');
+var last_date = getCookie('lastDate');
 if(last_date){
     document.getElementById('cookie').textContent = '前回訪れた時間：' + last_date;
 }else{
     document.getElementById('cookie').textContent = 'はじめまして';
 }
 var current_time = new Date();
-getCookie('lastDate', current_time.toString(), 7);
+setCookie('lastDate', current_time.toString(), 7);
 
 function getFileName() {
     // ホスト以下のパスを取得し、それをsplit('/')で「/」区切りで配列に入れ、pop()で配列の最後の値を取得
