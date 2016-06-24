@@ -35,18 +35,21 @@ function getCookie(c_name){
     return "";
 }
 
+// Cookieを読み込んで、表示する文章を変える
 var last_date = getCookie('lastDate');
 if(last_date){
     document.getElementById('cookie').textContent = '前回訪れた時間：' + last_date;
 }else{
     document.getElementById('cookie').textContent = 'はじめまして';
 }
-var current_time = new Date();
-setCookie('lastDate', current_time.toString(), 7);
-
 document.getElementById('remove_cookie').onsubmit = function(){
     setCookie('lastDate', "", 0);
 };
+
+// 新しい値の保存
+var current_time = new Date();
+setCookie('lastDate', current_time.toString(), 7);
+
 
 function getFileName() {
     // ホスト以下のパスを取得し、それをsplit('/')で「/」区切りで配列に入れ、pop()で配列の最後の値を取得
