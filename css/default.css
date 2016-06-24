@@ -14,6 +14,10 @@ li{
   margin-right: 1%;
 }
 
+.image{
+  list-style:none;
+}
+
 .image:after{
   content: ""; 
   display: block; 
