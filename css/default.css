@@ -10,7 +10,7 @@ body{
 }
 
 ul{
-  list-style: none;// ・を消す
+  list-style: none;/* ・を消す */
 }
 
 
