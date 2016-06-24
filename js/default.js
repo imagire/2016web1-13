@@ -35,7 +35,7 @@ function getCookie(c_name){
     return "";
 }
 
-var last_date = getCookie('lastDate');
+var last_date = setCookie('lastDate');
 if(last_date){
     document.getElementById('cookie').textContent = '前回訪れた時間：' + last_date;
 }else{
