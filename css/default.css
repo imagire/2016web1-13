@@ -9,10 +9,6 @@ body{
   width: 50%;
 }
 
-ul{
-  list-style:none;// ・を消す
-}
-
 li{
   float: left;
   margin-right: 1%;
