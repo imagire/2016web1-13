@@ -44,6 +44,10 @@ if(last_date){
 var current_time = new Date();
 setCookie('lastDate', current_time.toString(), 7);
 
+document.getElementById('remove_cookie').onsubmit = function(){
+    setCookie('lastDate', "", 0);
+};
+
 function getFileName() {
     // ホスト以下のパスを取得し、それをsplit('/')で「/」区切りで配列に入れ、pop()で配列の最後の値を取得
     return window.location.href.split('/').pop();
