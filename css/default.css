@@ -12,6 +12,7 @@ body{
 ul{
   list-style: none;/* ・を消す */
   margin: 0;
+  padding: 0;
 }
 
 
